@@ -19,26 +19,18 @@ namespace BOOP_04_01
             // Expression bodied syntax
             public long Height() => Math.Abs(TopRight.Y - BottomLeft.Y);
 
-            public void Print (bool printArea = false)
+            //string is returned that can be printed out.
+            public string ToString (bool printArea = false)
             {
-                Console.WriteLine();
-                Console.WriteLine($"Height: {Height(),10}");
-                Console.WriteLine($"Width:  {Width(),10}");
+                string sRet = $"Rectangle:\nHeight: {Height(),10}\nWidth:  {Width(),10}";
 
                 if (printArea)
-                    Console.WriteLine($"Area:   {Width() * Height(),10}");
+                    sRet = sRet + $"\nArea:   {Width() * Height(),10}";
+
+                return sRet;
             }
 
             //Static Methods
-            public static void Print(long width, long height, bool printArea = false)
-            {
-                Console.WriteLine();
-                Console.WriteLine($"Height: {height,10}");
-                Console.WriteLine($"Width:  {width,10}");
-
-                if (printArea)
-                    Console.WriteLine($"Area:   {width*height,10}");
-            }
             public static long Area(long width, long height) => width * height;
             public static void GetACD(long width, long height,
                 out long area, out long circumference, out double diagonal)
@@ -58,21 +50,9 @@ namespace BOOP_04_01
                 TopRight = new Point { X = 100, Y = 100 }
             };
 
-
-            //Two ways of printing the rectangle
-            r1.Print();
-            Rectangle.Print(r1.Width(), r1.Height());
-            Rectangle.Print(r1.Width(), r1.Height(), true);
-
-            //The static Print must have width and height parameters
-            //Using parameter position
-            Rectangle.Print(200, 50, true);
-
-            //Using parameter name
-            Rectangle.Print(height:200, width:50);
-
-            //Mixed position and name to clarity to a optional argument 
-            Rectangle.Print(150, 75, printArea:true);
+            //Print the rectangle
+            Console.WriteLine(r1.ToString());
+            Console.WriteLine(r1.ToString(printArea:true));
 
             //Get the diagonal
             Rectangle.GetACD(150, 75, out _, out _, out double diagonal);
@@ -80,3 +60,13 @@ namespace BOOP_04_01
         }
     }
 }
+//Exercises:
+//1.    Open your project DeckOfCards. 
+//2.    In the type PlayingCard , write a private method, FaceOrValue that has a return type string.
+//      In the method write an, expression bodies, switch expressions to return "Face" if the card is Ace, Knight, Queen, King. Otherwise return Value
+//3.    In the type PlayingCard, write a public method ToString() that return a string that can be used to print out a variable of the type.
+//      For example
+//      - Ace of Spade should be printed: Ace of Spade, a Black Face card
+//      - King of Heart should be printed: King of Heart, a Red Face card
+//      - Two of Club should be printed: Two of Club, a Black Value card
+//4.    Use a foreach-loop to print out every card in the array CardDeck.

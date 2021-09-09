@@ -70,3 +70,8 @@ namespace BOOP_04_02
         }
     }
 }
+//Exercises:
+//1.    In above code add an instance contructor to the type Reactangle that takes 3 parameters of type long, x, y and side and initiates an instace to a square.
+//      Create two instances of Rectangle using the two differnt constructors.
+//2.    In your project DeckOfCards, in the type PlayingCard write an instance constructor to that takes two parameters (Color and Value) of types
+//      PlayingCardColor and PlayingCardValue. The constructor to initialize the instance of PlayingCard with the Color and Value. 

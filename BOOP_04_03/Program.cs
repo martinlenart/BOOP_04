@@ -60,3 +60,7 @@ namespace BOOP_04_03
         }
     }
 }
+//Exercises:
+//1.    Declare two variables of type tuple (decimal, double, int) and initialize to some values of your choise.
+//2.    Declare two variable of type tuple (string, bool) and initialize to some values of your choise.
+//2.    In project DeckOfCards, in Main, Declare two tuples variable card1 and card2 of type (PlayingCardColor, PlayingCardValue)

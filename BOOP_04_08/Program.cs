@@ -60,5 +60,5 @@ namespace BOOP_04_08
     }
 
     //Excercise:
-    // 1. write code to find the smallest area, circumference and diagonal according to DRY design patte
+    // 1. Write code to find the smallest area, circumference and diagonal according to DRY design pattern
 }

@@ -62,11 +62,15 @@ namespace BOOP_04_01
 }
 //Exercises:
 //1.    Open your project DeckOfCards. 
-//2.    In the type PlayingCard , write a private method, FaceOrValue that has a return type string.
-//      In the method write an, expression bodies, switch expressions to return "Face" if the card is Ace, Knight, Queen, King. Otherwise return Value
-//3.    In the type PlayingCard, write a public method ToString() that return a string that can be used to print out a variable of the type.
+//2.    In the type PlayingCard , declare a private method, FaceOrValue that has a return type string.
+//      In the FaceOrValue write code using switch to return "Face" if the card is Ace, Knight, Queen, King.
+//      Otherwise return Value. Switch  example you can find in BOOP_02_16
+//3.    In the type PlayingCard , declare a private method, BlackOrRed that has a return type string.
+//      "Black" should be returned if the Color is Spades or Clubs. Otherwise "Red"
+//3.    In the type PlayingCard, write a public method PrintOut() that return a string that can be used to print out a variable of the type.
+//      Try to use an expression bodied syntax. 
 //      For example
-//      - Ace of Spade should be printed: Ace of Spade, a Black Face card
-//      - King of Heart should be printed: King of Heart, a Red Face card
-//      - Two of Club should be printed: Two of Club, a Black Value card
-//4.    Use a foreach-loop to print out every card in the array CardDeck.
+//      - Ace of Spade should be printed: Ace of Spades, a Black Face card
+//      - King of Heart should be printed: King of Hearts, a Red Face card
+//      - Two of Club should be printed: Two of Clubs, a Black Value card
+//4.    Use a foreach-loop to print out every card in the array cardDeck2.

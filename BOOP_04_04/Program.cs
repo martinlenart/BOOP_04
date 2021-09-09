@@ -59,6 +59,10 @@ namespace BOOP_04_04
 }
 //Exercises:
 //1.    With the tuple variables you created in Exercise BOOP_04_03.1 to 3, write code to test if the pairs are equal.
-//      If so Print "They are equal" otherwise Print "They are not equal"
-//2.    Challange: In project DeckOfCards, declare a static method called Equals with return type bool, that takes two parameters of type PlayingCard - card1 and card2. 
-//      Write code to test if the two cards are equal. If so return true otherwise false. Use Expression method syntax if you can.
+//      If so Print "Tuple cards are equal" otherwise Print "Tuple cards are not equal"
+//2.    Challange: In project DeckOfCards, declare a static method called AreEqual with return type bool, that takes two parameters
+//      of type PlayingCard - card1 and card2. 
+//      Write code in AreEqual to test if the two cards are equal. If so return true otherwise false.
+//      Use Expression method syntax and tuple when comparing if you can - it can be don in one line of code.
+//3.    Create two cards, singleCard1 and singleCard2 to test AreEqual. if equal print "Single cards are equal" otherwise
+//      "Single cards are not equal"

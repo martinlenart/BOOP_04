@@ -60,5 +60,10 @@ namespace BOOP_04_08
     }
 
     //Excercise:
-    // 1. Write code to find the smallest area, circumference and diagonal according to DRY design pattern
+    // 1.   Write code to find the smallest area, circumference and diagonal according to DRY design pattern
+    // 2.   Challange:
+    //      In project DeckOfCards, write code according to DRY that finds a playingCard of specific Color and Value
+    //      in cardDeck2. index in CardDeck2 should be identified.
+    //      Hint: creating a static method in class Program that is called FindCard is a good approach.
+    //      Parameters color, value and the deck of cards are passed into FindCard
 }

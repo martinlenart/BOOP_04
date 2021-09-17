@@ -73,4 +73,5 @@ namespace BOOP_04_01
 //      - Ace of Spade should be printed: Ace of Spades, a Black Face card
 //      - King of Heart should be printed: King of Hearts, a Red Face card
 //      - Two of Club should be printed: Two of Clubs, a Black Value card
-//4.    Use a foreach-loop to print out every card in the array cardDeck2.
+//4.    Use a foreach-loop to print out every card in the array cardDeck2 created in BOOP_03_10.6
+
